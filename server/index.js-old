@@ -1,0 +1,6 @@
+import sqlite3 from 'sqlite3';
+
+const db = new sqlite3.Database("D:/livechat/database/chat.db", sqlite3.OPEN_READWRITE, (err) => {
+    if (err) return console.error(err.message);
+    console.log('connected to the database');
+});
